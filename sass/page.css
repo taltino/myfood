@@ -1,0 +1,442 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+* a {
+  text-decoration: none;
+  color: black;
+}
+
+@-webkit-keyframes appear {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes appear {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+  margin-top: 16px;
+}
+
+.logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo a i {
+  position: absolute;
+  left: 35px;
+  font-size: 20px;
+}
+
+main {
+  background-color: #eee;
+}
+
+figure img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* section 1*/
+.block-menu {
+  border-radius: 16px 16px 0 0;
+  padding: 16px 30px;
+  width: 100%;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title h1 {
+  font-family: "Shrikhand", cursive;
+}
+
+.heart {
+  cursor: pointer;
+}
+
+.heart {
+  font-size: 30px;
+}
+
+.heart:hover .heart-far {
+  opacity: 0;
+}
+
+.heart:hover .heart-fas {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.heart-far {
+  position: absolute;
+}
+
+.heart-fas {
+  position: relative;
+  background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
+  -webkit-transition: all 10ms ease-in-out;
+  transition: all 10ms ease-in-out;
+}
+
+.block-menu {
+  position: relative;
+  margin-top: -60px;
+  background-color: #eee;
+}
+
+.block-carte-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.block-carte {
+  width: 33%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.name-carte {
+  margin-bottom: 16px;
+}
+
+.name-carte h2 {
+  border-bottom: 6px solid #99e2d0;
+  width: 65px;
+  padding: 7px 0;
+}
+
+.carte-menu {
+  border-radius: 16px;
+  margin-bottom: 20px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation-name: appear;
+          animation-name: appear;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-box-shadow: 0 0 1px black;
+          box-shadow: 0 0 1px black;
+}
+
+.carte-menu:hover .texte {
+  width: 80%;
+}
+
+.carte-menu:hover .validation-box {
+  width: 15%;
+  overflow: auto;
+}
+
+.carte-menu:hover .validation-box i {
+  -webkit-animation: rotate 0.5s;
+          animation: rotate 0.5s;
+}
+
+.texte {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  padding: 15px 15px;
+  width: 100%;
+  height: 85px;
+  overflow: hidden;
+}
+
+.texte h3 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.texte p {
+  color: #5a5353;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 18px;
+}
+
+.menu-prize {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+
+.validation-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #99e2d0;
+  width: 60px;
+  height: auto;
+  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 0 16px 16px 0;
+  font-size: 30px;
+  width: 0%;
+  overflow: hidden;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.validation-box i {
+  color: white;
+}
+
+#case1 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+#case2 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+#case3 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+#case4 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+#case5 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+#case6 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+#case7 {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+#case8 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+#case9 {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+.mainbutton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+
+.mainbutton button {
+  opacity: 1;
+  background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+  color: white;
+  border-radius: 30px;
+  font-weight: bold;
+  padding: 16px 45px;
+  border: none;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+
+.mainbutton button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/*footer*/
+.block-footer {
+  background-color: #354146;
+  padding: 16px 16px;
+}
+
+.block-footer h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-family: "Shrikhand", cursive, sans-serif;
+}
+
+.container a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.container a i {
+  margin-right: 6px;
+}
+
+@media screen and (max-width: 992px) {
+  .block-restaurant {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .carte-restaurant {
+    width: 100%;
+  }
+  .block-carte-menu {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .block-carte {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .block-footer h3 {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .container a {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+/*# sourceMappingURL=page.css.map */

@@ -1,0 +1,307 @@
+@import "../mixin/mixin.scss";
+@import "../base/base.scss";
+@import "../color/color.scss";
+
+@keyframes disappear {
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    border-width: 20px;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    border-width: 1px;
+  }
+}
+
+.loader {
+  position: fixed;
+  background-color: #ffffff;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.9;
+  @include flexbox-center;
+  animation: disappear 300ms 3s forwards;
+  transform-origin: top;
+  &::after {
+    content: "";
+    border: 5px solid #ffffff;
+    border-top: 5px solid $color-tertiary;
+    border-bottom-color: $color-secondary;
+    border-right-color: $color-primary;
+    border-left-color: $color-primary;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    animation: spin 4s infinite linear;
+  }
+}
+
+/*header*/
+
+header {
+  text-align: center;
+}
+
+.logo {
+  background-color: white;
+  box-shadow: 0px 1px 13px 0px;
+
+  img {
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+}
+
+.location {
+  @include flexbox-center;
+  background: #eee;
+  padding: 16px;
+  i {
+    margin-right: 10px;
+  }
+}
+/**** section1 *****/
+
+.block1 {
+  text-align: center;
+  margin-bottom: 20px;
+  background: #e0dede38;
+  padding: 40px 0px;
+}
+
+/**** title *****/
+
+.title {
+  margin-bottom: 10px;
+}
+
+.title h1 {
+  margin-bottom: 10px;
+}
+
+.explorer button {
+  background-color: $color-secondary;
+  padding: 13px 15px;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 40px;
+}
+
+.explorer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  button {
+    @include button-style;
+    padding: 16px 45px;
+    border: none;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    border-radius: 25px;
+    &:hover {
+      @include button-hover;
+    }
+  }
+}
+
+/*section2-fonctionnement*/
+
+.block-filter h2 {
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+.block-filter {
+  margin-bottom: 40px;
+}
+
+.block-item {
+  display: flex;
+  justify-content: space-around;
+}
+.item {
+  @include flexbox-center;
+  width: 100%;
+  height: 75px;
+  border-radius: 20px;
+  background: #e0dede38;
+  box-shadow: 0 0 0 0;
+  &:hover {
+    background-color: #9356dc29;
+    @include button-hover;
+  }
+  p {
+    margin-right: 45px;
+    font-weight: bold;
+  }
+  i {
+    color: grey;
+    margin-right: 20px;
+    font-size: 20px;
+  }
+}
+
+.number-filter {
+  @include flexbox-center;
+  border-radius: 100%;
+  background-color: $color-primary;
+  width: 25px;
+  height: 25px;
+  margin: -12px;
+  margin-right: 20px;
+  color: white;
+  font-family: initial;
+  font-size: 15px;
+}
+
+/*section3 restauran*/
+
+.section3 {
+  background: #d1cfcf47;
+}
+.block-restaurant {
+  width: 100%;
+
+  h2 {
+    margin-bottom: 20px;
+    @include center;
+  }
+}
+
+.block-carte-restaurant {
+  @include center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.carte-restaurant {
+  width: 49%;
+  height: 250px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 16px 16px 16px 16px;
+  box-shadow: 0 0 5px 0;
+}
+
+.carte-restaurant img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+
+.texte-restaurant {
+  display: flex;
+  padding: 4px 16px;
+  align-items: center;
+}
+
+.texte {
+  width: 95%;
+  .name-carte {
+    font-weight: bold;
+    margin-bottom: 3px;
+    font-size: 19px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+
+.heart {
+  font-size: 30px;
+  &:hover .heart-far {
+    opacity: 0;
+  }
+  &:hover .heart-fas {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+.heart-far {
+  position: absolute;
+}
+
+.heart-fas {
+  position: relative;
+  background: $gradient;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
+  transition: all 10ms ease-in-out;
+}
+
+/**** footer ****/
+
+.block-footer {
+  background-color: #354146;
+  padding: 16px 16px;
+}
+
+.block-footer h3 {
+  @include flexbox-center;
+  color: white;
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-family: "Shrikhand", cursive, sans-serif;
+}
+
+.container a {
+  @include flexbox-center;
+  color: white;
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-size: 20px;
+
+  i {
+    margin-right: 6px;
+  }
+}
+
+@media screen and (max-width: 1076px) {
+  .block-item {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .item {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .block-restaurant {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .carte-restaurant {
+    width: 100%;
+  }
+  .block-carte-menu {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .block-carte {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .block-footer h3 {
+    justify-content: flex-start;
+  }
+  .container a {
+    justify-content: flex-start;
+  }
+}
