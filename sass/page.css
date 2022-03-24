@@ -100,10 +100,6 @@ a {
   font-size: 20px;
 }
 
-main {
-  background-color: #eee;
-}
-
 figure img {
   width: 100%;
   height: 400px;
@@ -170,9 +166,13 @@ figure img {
 }
 
 .block-menu {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
-  margin-top: -60px;
-  background-color: #eee;
+  margin-top: -63px;
+  background-color: #eeeeeebf;
+  padding: 16px 30px 0px;
 }
 
 .block-carte-menu {
@@ -212,8 +212,6 @@ figure img {
           animation-name: appear;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-box-shadow: 0 0 1px black;
-          box-shadow: 0 0 1px black;
 }
 
 .carte-menu:hover .texte {
@@ -343,10 +341,14 @@ figure img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 20px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #eeeeeebf;
+  padding: 60px 0px 70px;
 }
 
-.mainbutton button {
+button {
   opacity: 1;
   background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
   color: white;
@@ -359,7 +361,7 @@ figure img {
   cursor: pointer;
 }
 
-.mainbutton button:hover {
+button:hover {
   cursor: pointer;
   opacity: 0.8;
   -webkit-transition: 0.3s;
@@ -409,21 +411,21 @@ figure img {
 }
 
 @media screen and (max-width: 992px) {
-  .block-restaurant {
-    width: 100%;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .carte-restaurant {
-    width: 100%;
-  }
   .block-carte-menu {
     width: 100%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .block-menu {
+    background-color: #eee;
+    width: 100%;
+  }
   .block-carte {
     width: 100%;
+  }
+  .mainbutton {
+    width: 100%;
+    background-color: #eee;
   }
 }
 

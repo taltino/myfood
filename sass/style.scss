@@ -177,6 +177,10 @@ header {
   }
 }
 
+.block-restaurant {
+  padding: 70px 0px;
+}
+
 .block-carte-restaurant {
   @include center;
   display: flex;
@@ -285,14 +289,6 @@ header {
     flex-wrap: wrap;
   }
   .carte-restaurant {
-    width: 100%;
-  }
-  .block-carte-menu {
-    width: 100%;
-    flex-wrap: wrap;
-  }
-
-  .block-carte {
     width: 100%;
   }
 }
