@@ -72,9 +72,10 @@ figure img {
   }
   &:hover .heart-fas {
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale (1.1);
   }
 }
+
 .heart-far {
   position: absolute;
 }
@@ -95,7 +96,6 @@ figure img {
   margin-top: -63px;
   background-color: #eeeeeebf;
   padding: 16px 30px 0px;
-
 }
 
 .block-carte-menu {
@@ -146,6 +146,7 @@ figure img {
   h3 {
     font-weight: bold;
     font-size: 18px;
+    white-space: nowrap;
   }
   p {
     color: rgb(90, 83, 83);
@@ -217,18 +218,17 @@ figure img {
   background-color: #eeeeeebf;
   padding: 60px 0px 70px;
 }
-  button {
-    @include button-style;
-    padding: 16px 45px;
-    border: none;
-    font-size: 20px;
-    font-family: "Roboto", sans-serif;
-    cursor: pointer;
-    &:hover {
-      @include button-hover;
-    }
+button {
+  @include button-style;
+  padding: 16px 45px;
+  border: none;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  &:hover {
+    @include button-hover;
   }
-
+}
 
 /*footer*/
 
@@ -272,7 +272,6 @@ figure img {
   .mainbutton {
     width: 100%;
     background-color: #eee;
-
   }
 }
 

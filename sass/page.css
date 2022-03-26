@@ -146,8 +146,8 @@ figure img {
 
 .heart:hover .heart-fas {
   opacity: 1;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale 1.1;
+          transform: scale 1.1;
 }
 
 .heart-far {
@@ -166,7 +166,7 @@ figure img {
 }
 
 .block-menu {
-  width: 80%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -241,6 +241,7 @@ figure img {
 .texte h3 {
   font-weight: bold;
   font-size: 18px;
+  white-space: nowrap;
 }
 
 .texte p {
@@ -341,7 +342,7 @@ figure img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 80%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   background-color: #eeeeeebf;
