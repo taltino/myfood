@@ -1,7 +1,7 @@
 base
-color
 images 
 mixin
 .vscode
 dart-sass
 favicon_io
+theme

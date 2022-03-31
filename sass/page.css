@@ -109,12 +109,6 @@ figure img {
 }
 
 /* section 1*/
-.block-menu {
-  border-radius: 16px 16px 0 0;
-  padding: 16px 30px;
-  width: 100%;
-}
-
 .title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -164,16 +158,19 @@ figure img {
   opacity: 0;
   -webkit-transition: all 10ms ease-in-out;
   transition: all 10ms ease-in-out;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .block-menu {
-  width: 90%;
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
   position: relative;
   margin-top: -63px;
   background-color: #eeeeeebf;
   padding: 16px 30px 0px;
+  border-radius: 50px 50px 0 0;
 }
 
 .block-carte-menu {
@@ -190,6 +187,7 @@ figure img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .name-carte {
@@ -200,6 +198,7 @@ figure img {
   border-bottom: 6px solid #99e2d0;
   width: 65px;
   padding: 7px 0;
+  font-weight: 100;
 }
 
 .carte-menu {
@@ -343,11 +342,11 @@ figure img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 90%;
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
   background-color: #eeeeeebf;
-  padding: 60px 0px 70px;
+  padding: 13px 0px 85px;
 }
 
 button {
@@ -372,7 +371,7 @@ button:hover {
 
 /*footer*/
 .block-footer {
-  background-color: #354146;
+  background-color: #35393a;
   padding: 16px 16px;
 }
 
@@ -387,7 +386,7 @@ button:hover {
       -ms-flex-align: center;
           align-items: center;
   color: white;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   font-size: 20px;
   font-family: "Shrikhand", cursive, sans-serif;
 }

@@ -1,6 +1,6 @@
 @import "../mixin/mixin.scss";
 @import "../base/base.scss";
-@import "../color/color.scss";
+@import "../theme/color.scss";
 
 @keyframes disappear {
   100% {
@@ -50,8 +50,8 @@ header {
 }
 
 .logo {
-  background-color: white;
   box-shadow: 0px 1px 13px 0px;
+  border-bottom: 3px solid #cdcaca;
 
   img {
     margin-top: 30px;
@@ -66,12 +66,16 @@ header {
   i {
     margin-right: 10px;
   }
+  p {
+    font-weight: 500;
+    font-size: 18px;
+  }
 }
 /**** section1 *****/
 
 .block1 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   background: #e0dede38;
   padding: 40px 0px;
 }
@@ -79,11 +83,15 @@ header {
 /**** title *****/
 
 .title {
-  margin-bottom: 10px;
-}
-
-.title h1 {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+  h1 {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+  p {
+    font-size: 22px;
+    font-weight: 100;
+  }
 }
 
 .explorer button {
@@ -102,12 +110,12 @@ header {
 
   button {
     @include button-style;
-    padding: 16px 45px;
+    padding: 20px 20px;
     border: none;
     font-size: 20px;
     font-family: "Roboto", sans-serif;
     cursor: pointer;
-    border-radius: 25px;
+    border-radius: 30px;
     &:hover {
       @include button-hover;
     }
@@ -116,12 +124,12 @@ header {
 
 /*section2-fonctionnement*/
 
-.block-filter h2 {
-  margin-bottom: 20px;
-  margin-left: 30px;
-}
 .block-filter {
   margin-bottom: 40px;
+  @include center;
+  h2 {
+    margin-bottom: 30px;
+  }
 }
 
 .block-item {
@@ -131,14 +139,18 @@ header {
 .item {
   @include flexbox-center;
   width: 100%;
-  height: 75px;
+  padding: 25px;
   border-radius: 20px;
   background: #e0dede38;
-  box-shadow: 0 0 0 0;
+  position: relative;
   &:hover {
     background-color: #9356dc29;
     @include button-hover;
   }
+  &:hover i {
+    color: $color-primary;
+  }
+
   p {
     margin-right: 45px;
     font-weight: bold;
@@ -151,16 +163,19 @@ header {
 }
 
 .number-filter {
+  position: absolute;
   @include flexbox-center;
   border-radius: 100%;
   background-color: $color-primary;
   width: 25px;
   height: 25px;
-  margin: -12px;
   margin-right: 20px;
   color: white;
   font-family: initial;
   font-size: 15px;
+  transform: translate(-50%, -50%);
+  left: 0;
+  top: 50%;
 }
 
 /*section3 restauran*/
@@ -173,16 +188,15 @@ header {
 
   h2 {
     margin-bottom: 20px;
-    @include center;
   }
 }
 
 .block-restaurant {
   padding: 70px 0px;
+  @include center;
 }
 
 .block-carte-restaurant {
-  @include center;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -190,23 +204,42 @@ header {
 
 .carte-restaurant {
   width: 49%;
-  height: 250px;
   margin-bottom: 20px;
   background-color: white;
   border-radius: 16px 16px 16px 16px;
-  box-shadow: 0 0 5px 0;
+  box-shadow: 0px 2px 5px 2px #8080806b;
+
+  &:hover {
+    transition-duration: 0.25s;
+    transform: scale(1.03);
+  }
+}
+
+.new {
+  position: relative;
+}
+.new::before {
+  content: "Nouveau";
+  position: absolute;
+  background-color: $color-tertiary;
+  color: #055c05;
+  right: 16px;
+  top: 16px;
+  padding: 10px 17px;
+  border-radius: 4px;
+  font-size: 19px;
 }
 
 .carte-restaurant img {
   width: 100%;
-  height: 190px;
+  height: 220px;
   object-fit: cover;
   border-radius: 16px 16px 0 0;
 }
 
 .texte-restaurant {
   display: flex;
-  padding: 4px 16px;
+  padding: 12px 16px;
   align-items: center;
 }
 
@@ -244,12 +277,16 @@ header {
   color: transparent;
   opacity: 0;
   transition: all 10ms ease-in-out;
+  transition: .5s;
 }
 
 /**** footer ****/
 
+footer {
+  background-color: #35393a;
+}
+
 .block-footer {
-  background-color: #354146;
   padding: 16px 16px;
 }
 
@@ -285,18 +322,43 @@ header {
 
 @media screen and (max-width: 992px) {
   .block-restaurant {
-    width: 100%;
     flex-wrap: wrap;
+    @include center-mobile;
   }
   .carte-restaurant {
     width: 100%;
   }
 }
 
-@media screen and (max-width: 560px) {
-  .block-footer h3 {
-    justify-content: flex-start;
+@media screen and (max-width: 651px) {
+  .block-filter {
+    @include center-mobile;
+    a {
+      width: 100%;
+    }
   }
+}
+
+@media screen and (max-width: 560px) {
+.title{
+  @include center-mobile;
+}
+
+
+
+
+  footer {
+    background-color: #354146;
+  }
+
+  .block-footer {
+    @include center-mobile;
+    padding: 17px 0px;
+    h3 {
+      justify-content: flex-start;
+    }
+  }
+
   .container a {
     justify-content: flex-start;
   }

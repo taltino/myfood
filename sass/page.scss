@@ -1,6 +1,6 @@
 @import "../mixin/mixin.scss";
 @import "../base/base.scss";
-@import "../color/color.scss";
+@import "../theme/color.scss";
 
 @keyframes appear {
   0% {
@@ -45,11 +45,7 @@ figure img {
 
 /* section 1*/
 
-.block-menu {
-  border-radius: 16px 16px 0 0;
-  padding: 16px 30px;
-  width: 100%;
-}
+
 
 .title {
   display: flex;
@@ -89,6 +85,7 @@ figure img {
   color: transparent;
   opacity: 0;
   transition: all 10ms ease-in-out;
+  transition: .5s;
 }
 
 .block-menu {
@@ -97,6 +94,8 @@ figure img {
   margin-top: -63px;
   background-color: #eeeeeebf;
   padding: 16px 30px 0px;
+  border-radius: 50px 50px 0 0;
+  
 }
 
 .block-carte-menu {
@@ -107,6 +106,7 @@ figure img {
 .block-carte {
   width: 33%;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 .name-carte {
   margin-bottom: 16px;
@@ -114,6 +114,7 @@ figure img {
     border-bottom: 6px solid $color-tertiary;
     width: 65px;
     padding: 7px 0;
+    font-weight: 100;
   }
 }
 
@@ -217,7 +218,7 @@ figure img {
   justify-content: center;
   @include center;
   background-color: #eeeeeebf;
-  padding: 60px 0px 70px;
+  padding: 13px 0px 85px;
 }
 button {
   @include button-style;
@@ -234,14 +235,14 @@ button {
 /*footer*/
 
 .block-footer {
-  background-color: #354146;
+  background-color: #35393a;
   padding: 16px 16px;
 }
 
 .block-footer h3 {
   @include flexbox-center;
   color: white;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   font-size: 20px;
   font-family: "Shrikhand", cursive, sans-serif;
 }
