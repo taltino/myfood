@@ -131,6 +131,11 @@ figure img {
   cursor: pointer;
 }
 
+.heart:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .heart {
   font-size: 30px;
 }
@@ -141,8 +146,6 @@ figure img {
 
 .heart:hover .heart-fas {
   opacity: 1;
-  -webkit-transform: scale 1.1;
-          transform: scale 1.1;
 }
 
 .heart-far {
@@ -158,8 +161,8 @@ figure img {
   opacity: 0;
   -webkit-transition: all 10ms ease-in-out;
   transition: all 10ms ease-in-out;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .block-menu {
@@ -405,6 +408,8 @@ button:hover {
   margin-bottom: 10px;
   text-decoration: none;
   font-size: 20px;
+  -webkit-transition: color grey 0.3s;
+  transition: color grey 0.3s;
 }
 
 .container a i {

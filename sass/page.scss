@@ -45,8 +45,6 @@ figure img {
 
 /* section 1*/
 
-
-
 .title {
   display: flex;
   font-size: 30px;
@@ -60,6 +58,9 @@ figure img {
 
 .heart {
   cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .heart {
@@ -69,7 +70,6 @@ figure img {
   }
   &:hover .heart-fas {
     opacity: 1;
-    transform: scale (1.1);
   }
 }
 
@@ -85,7 +85,7 @@ figure img {
   color: transparent;
   opacity: 0;
   transition: all 10ms ease-in-out;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .block-menu {
@@ -95,7 +95,6 @@ figure img {
   background-color: #eeeeeebf;
   padding: 16px 30px 0px;
   border-radius: 50px 50px 0 0;
-  
 }
 
 .block-carte-menu {
@@ -253,6 +252,7 @@ button {
   margin-bottom: 10px;
   text-decoration: none;
   font-size: 20px;
+  transition: color grey 0.3s;
   i {
     margin-right: 6px;
   }
