@@ -281,6 +281,10 @@ figure img {
   font-family: "Roboto", sans-serif;
 }
 
+.menu-prize p {
+  font-family: inherit;
+}
+
 .validation-box {
   display: -webkit-box;
   display: -ms-flexbox;

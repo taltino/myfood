@@ -177,6 +177,9 @@ figure img {
   font-weight: bold;
   font-size: 18px;
   font-family: "Roboto", sans-serif;
+  p{
+    font-family: inherit;
+  }
 }
 
 .validation-box {
