@@ -137,9 +137,10 @@ header {
   justify-content: space-around;
 }
 .item {
-  @include flexbox-center;
+  display: flex;
+  align-items: center;
   width: 100%;
-  padding: 25px;
+  padding: 25px 25px 25px 33px;
   border-radius: 20px;
   background: #e0dede38;
   position: relative;
@@ -334,7 +335,7 @@ footer {
   .block-filter {
     @include center-mobile;
     a {
-      width: 100%;
+      width: 95%;
     }
   }
 }
