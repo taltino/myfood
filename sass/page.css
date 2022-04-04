@@ -221,6 +221,20 @@ figure img {
   width: 80%;
 }
 
+.carte-menu:hover .texte p {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.carte-menu:hover .texte h3 {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .carte-menu:hover .validation-box {
   width: 15%;
   overflow: auto;

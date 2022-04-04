@@ -128,6 +128,18 @@ figure img {
   &:hover .texte {
     width: 80%;
   }
+  &:hover .texte p {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  &:hover .texte h3 {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
   &:hover .validation-box {
     width: 15%;
     overflow: auto;
