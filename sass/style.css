@@ -98,7 +98,7 @@ a {
           animation: spin 4s infinite linear;
 }
 
-/*header*/
+/***** header *****/
 header {
   text-align: center;
 }
@@ -200,7 +200,7 @@ header {
   transition: 0.3s;
 }
 
-/*section2-fonctionnement*/
+/***** section2-fonctionnement *****/
 .block-filter {
   margin-bottom: 40px;
   width: 95%;
@@ -282,7 +282,7 @@ header {
   top: 50%;
 }
 
-/*section3 restauran*/
+/****** section3 restaurant ******/
 .section3 {
   background: #d1cfcf47;
 }
@@ -404,8 +404,8 @@ header {
   opacity: 0;
   -webkit-transition: all 10ms ease-in-out;
   transition: all 10ms ease-in-out;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 /**** footer ****/
@@ -453,6 +453,7 @@ footer {
   margin-right: 6px;
 }
 
+/**** mobile ****/
 @media screen and (max-width: 1076px) {
   .block-item {
     width: 100%;

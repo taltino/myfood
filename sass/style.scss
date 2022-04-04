@@ -42,7 +42,7 @@
   }
 }
 
-/*header*/
+/***** header *****/
 
 header {
   text-align: center;
@@ -121,7 +121,7 @@ header {
   }
 }
 
-/*section2-fonctionnement*/
+/***** section2-fonctionnement *****/
 
 .block-filter {
   margin-bottom: 40px;
@@ -178,7 +178,7 @@ header {
   top: 50%;
 }
 
-/*section3 restauran*/
+/****** section3 restaurant ******/
 
 .section3 {
   background: #d1cfcf47;
@@ -214,7 +214,6 @@ header {
     transform: scale(1.03);
   }
 }
-
 .new {
   position: relative;
 }
@@ -277,7 +276,7 @@ header {
   color: transparent;
   opacity: 0;
   transition: all 10ms ease-in-out;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 /**** footer ****/
@@ -310,6 +309,8 @@ footer {
   }
 }
 
+/**** mobile ****/
+
 @media screen and (max-width: 1076px) {
   .block-item {
     width: 100%;
@@ -340,12 +341,9 @@ footer {
 }
 
 @media screen and (max-width: 560px) {
-.title{
-  @include center-mobile;
-}
-
-
-
+  .title {
+    @include center-mobile;
+  }
 
   footer {
     background-color: #354146;
