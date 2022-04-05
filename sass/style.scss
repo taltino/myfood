@@ -319,6 +319,9 @@ footer {
   .item {
     margin-bottom: 16px;
   }
+  .block-filter a {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -329,13 +332,16 @@ footer {
   .carte-restaurant {
     width: 100%;
   }
+  .block-filter a {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 651px) {
   .block-filter {
     @include center-mobile;
     a {
-      width: 95%;
+      width: 100%;
     }
   }
 }
@@ -346,7 +352,7 @@ footer {
   }
 
   footer {
-    background-color: #354146;
+    background-color: #35393a;
   }
 
   .block-footer {

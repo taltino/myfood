@@ -426,8 +426,6 @@ button:hover {
   margin-bottom: 10px;
   text-decoration: none;
   font-size: 20px;
-  -webkit-transition: color grey 0.3s;
-  transition: color grey 0.3s;
 }
 
 .container a i {
@@ -454,6 +452,9 @@ button:hover {
 }
 
 @media screen and (max-width: 560px) {
+  .block-footer {
+    padding: 16px 25px;
+  }
   .block-footer h3 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;

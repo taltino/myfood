@@ -154,8 +154,7 @@ figure img {
   padding: 15px 15px;
   width: 100%;
   height: 85px;
-  overflow: hidden; 
-
+  overflow: hidden;
 
   h3 {
     font-weight: bold;
@@ -177,7 +176,7 @@ figure img {
   font-weight: bold;
   font-size: 18px;
   font-family: "Roboto", sans-serif;
-  p{
+  p {
     font-family: inherit;
   }
 }
@@ -269,7 +268,7 @@ button {
   margin-bottom: 10px;
   text-decoration: none;
   font-size: 20px;
-  transition: color grey 0.3s;
+
   i {
     margin-right: 6px;
   }
@@ -295,6 +294,9 @@ button {
 }
 
 @media screen and (max-width: 560px) {
+  .block-footer {
+    padding: 16px 25px;
+  }
   .block-footer h3 {
     justify-content: flex-start;
   }
