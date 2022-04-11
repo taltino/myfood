@@ -465,5 +465,76 @@ button:hover {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
+  .carte-menu {
+    border-radius: 16px;
+    margin-bottom: 20px;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-animation-name: appear;
+            animation-name: appear;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+  }
+  .carte-menu:hover .texte {
+    width: 100%;
+  }
+  .carte-menu:hover .texte p {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .carte-menu:hover .texte h3 {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .carte-menu:hover .validation-box {
+    width: 0%;
+    overflow: auto;
+  }
+  .carte-menu:hover .validation-box i {
+    -webkit-animation: rotate 0s;
+            animation: rotate 0s;
+  }
+  .carte-menu:active .texte {
+    width: 80%;
+  }
+  .carte-menu:active .validation-box {
+    width: 15%;
+    overflow: auto;
+  }
+  .carte-menu:active .validation-box i {
+    -webkit-animation: rotate 0.3s;
+            animation: rotate 0.3s;
+  }
+  .heart {
+    font-size: 30px;
+  }
+  .heart:hover .heart-far {
+    opacity: 1;
+  }
+  .heart:hover .heart-fas {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  .heart:active .heart-far {
+    opacity: 0;
+  }
+  .heart:active .heart-fas {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  button:hover {
+    opacity: 1;
+  }
+  button:active {
+    opacity: 0.8;
+  }
 }
 /*# sourceMappingURL=page.css.map */

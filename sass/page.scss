@@ -303,4 +303,73 @@ button {
   .container a {
     justify-content: flex-start;
   }
+
+  .carte-menu {
+    border-radius: 16px;
+    margin-bottom: 20px;
+    background-color: white;
+    display: flex;
+    animation-name: appear;
+    animation-duration: 1s;
+
+    &:hover .texte {
+      width: 100%;
+    }
+    &:hover .texte p {
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    &:hover .texte h3 {
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    &:hover .validation-box {
+      width: 0%;
+      overflow: auto;
+    }
+    &:hover .validation-box i {
+      animation: rotate 0s;
+    }
+    &:active .texte {
+      width: 80%;
+    }
+
+    &:active .validation-box {
+      width: 15%;
+      overflow: auto;
+    }
+    &:active .validation-box i {
+      animation: rotate 0.3s;
+    }
+  }
+
+  .heart {
+    font-size: 30px;
+
+    &:hover .heart-far {
+      opacity: 1;
+    }
+    &:hover .heart-fas {
+      opacity: 0;
+      transform: scale(0);
+    }
+    &:active .heart-far {
+      opacity: 0;
+    }
+    &:active .heart-fas {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  button:hover {
+    opacity: 1;
+  }
+  button:active {
+    opacity: 0.8;
+  }
 }

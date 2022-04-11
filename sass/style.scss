@@ -8,7 +8,6 @@
   }
 }
 
-
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -257,7 +256,7 @@ header {
 
 .heart {
   font-size: 30px;
-  
+
   &:hover .heart-far {
     opacity: 0;
   }
@@ -266,6 +265,7 @@ header {
     transform: scale(1.1);
   }
 }
+
 .heart-far {
   position: absolute;
 }
@@ -367,5 +367,48 @@ footer {
 
   .container a {
     justify-content: flex-start;
+  }
+
+  .block-item .item:hover {
+    background: #e0dede38;
+    cursor: pointer;
+    opacity: 1;
+    -webkit-transition: 0;
+    transition: 0;
+  }
+
+  .block-item .item:active {
+    background-color: #9356dc29;
+    @include button-hover;
+  }
+
+  .heart {
+    font-size: 30px;
+
+    &:hover .heart-far {
+      opacity: 1;
+    }
+    &:hover .heart-fas {
+      opacity: 0;
+      transform: scale(1.1);
+    }
+    &:active .heart-far {
+      opacity: 0;
+    }
+    &:active .heart-fas {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  }
+
+  .carte-restaurant:hover {
+    transform: scale(1);
+  }
+
+  .explorer button:hover {
+    opacity: 1;
+  }
+  .explorer button:active {
+    opacity: 0.8;
   }
 }
